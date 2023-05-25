@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/xxxTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/goback_white"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:tag="back"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:id="@+id/webTitile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Vocabulary"
+                android:gravity="left|center"
+                android:textStyle="normal"
+                android:textColor="#FFFFFF"
+                android:paddingTop="5dp"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layMyProfile"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/m_rectangle_back"
+            android:minHeight="120dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:text="Nghia la gi?"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <EditText
+                android:id="@+id/etAnswer"
+                android:hint="  Type answer here...."
+                android:textColorHint="@color/black"
+                android:background="@drawable/edittext_border"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:layout_height="35dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
+                android:layout_width="290dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="40dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/learn_english2"/>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/btCheck"
+                    android:text="check"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/white"
+                    android:background="@color/rightAnswer"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btNext"
+                    android:layout_width="100dp"
+                    android:layout_height="57dp"
+                    android:layout_marginStart="180dp"
+                    android:backgroundTint="@color/rightAnswer"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/next_foreground"
+                    android:drawableRight="@drawable/next_foreground"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- ########## Bottom Nav Menu Start ########## -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/bot_menu"
+        android:layout_alignParentBottom="true"/>
+    <!-- ########## Bottom Nav Menu End ########## -->
+
+
+</RelativeLayout>

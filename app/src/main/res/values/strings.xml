@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Komekko</string>
+    <string name="top_icon">TOP ICON</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="or">OR</string>
+    <string name="google_icon">google icon</string>
+    <string name="facebook_icon">facebook icon</string>
+    <string name="new_user_register_now">New User? Register Now</string>
+    <string name="Register">Register Now</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close navigation Drawer</string>
+    <!-- Admob AD ON or OFF -->
+    <string name="show_admob_ad">OFF</string>
+
+    <!-- Device ID  setTestDeviceIds (search on logcat for device id) -->
+    <string name="device_id">EBB13CB7696368E0098F88968430F13A</string>
+
+    <!-- Admob APP ID HERE -->
+    <string name="admob_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <!-- Admob Ad Unit IDS Here -->
+    <string name="admob_INTERSTITIAL_UNIT_ID">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_BANNER_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="build_text">Build with ❤ from,</string>
+    <string name="dept_text">Hieu Nguyen, \nPTIT with love</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/dictionary"
+        android:title="Dictionary"
+        android:icon="@drawable/ic_translate"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="About Us"
+        android:icon="@drawable/ic_support"/>
+
+</menu>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1024991110901",
+    "project_id": "komekko-c0648",
+    "storage_bucket": "komekko-c0648.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024991110901:android:03956ff5d998a9165647bc",
+        "android_client_info": {
+          "package_name": "com.example.komekko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024991110901-k4gn24sv6stdbfnclebosnpq00j6o8at.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLVkKIPH1Ih0r5-JYchzO3-ysLbDM18Uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024991110901-k4gn24sv6stdbfnclebosnpq00j6o8at.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/xxxTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layMyProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:gravity="left|center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/goback_white"
+                android:scaleType="centerInside"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:tag="back"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:id="@+id/webTitile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Vocabulary"
+                android:gravity="left|center"
+                android:textStyle="normal"
+                android:textColor="#FFFFFF"
+                android:paddingTop="5dp"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layMyProfile"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/m_rectangle_back"
+            android:minHeight="120dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:weightSum="10">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"
+                    android:src="@drawable/sound_foreground"
+                    android:layout_marginStart="140dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose right answer"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+            <TableLayout
+                android:layout_width="380dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="10dp"
+                android:stretchColumns="*">
+                <TableRow
+                    android:minHeight="130dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        app:cardCornerRadius="30dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:id="@+id/tvA"
+                            android:text="TableLayout Example"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        app:cardCornerRadius="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:id="@+id/tvB"
+                            android:textSize="20sp"
+                            android:text="TableLayout Example"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </androidx.cardview.widget.CardView>
+                </TableRow>
+                <TableRow
+                    android:minHeight="130dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        app:cardCornerRadius="30dp"
+                        android:layout_marginRight="5dp">
+                        <TextView
+                            android:id="@+id/tvC"
+                            android:text="TableLayout Example"
+                            android:textSize="20sp"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        app:cardCornerRadius="40dp"
+                        android:layout_marginLeft="5dp">
+                        <TextView
+                            android:id="@+id/tvD"
+                            android:text="TableLayout Example"
+                            android:textSize="20sp"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"/>
+                    </androidx.cardview.widget.CardView>
+                </TableRow>
+
+            </TableLayout>
+            <Button
+                android:id="@+id/btNext"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/rightAnswer"
+                android:layout_marginStart="280dp"
+                android:textColor="@color/white"
+                android:drawableLeft="@drawable/next_foreground"
+                android:drawableRight="@drawable/next_foreground"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- ########## Bottom Nav Menu Start ########## -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/bot_menu"
+        android:layout_alignParentBottom="true"/>
+    <!-- ########## Bottom Nav Menu End ########## -->
+
+
+</RelativeLayout>
